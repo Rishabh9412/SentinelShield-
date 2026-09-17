@@ -28,12 +28,12 @@ function App() {
   }, []);
 
   const fetchData = () => {
-    fetch("http://127.0.0.1:5000/api/logs")
+    fetch("https://sentinelshield-d7qb.onrender.com")
       .then((res) => res.json())
       .then(setLogs)
       .catch((err) => console.error("Failed to fetch logs:", err));
 
-    fetch("http://127.0.0.1:5000/api/flagged")
+    fetch("https://sentinelshield-d7qb.onrender.com")
       .then((res) => res.json())
       .then(setFlagged)
       .catch((err) => console.error("Failed to fetch flagged IPs:", err));
